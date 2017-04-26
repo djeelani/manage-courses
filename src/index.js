@@ -1,13 +1,13 @@
 import React from 'react';
-import { Router } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/styles.css';
 import routes from './routes';
-import createBrowserHistory from 'history/createBrowserHistory';
-
-const browserHistory = createBrowserHistory();
+import App from './components/App';
 
 ReactDOM.render(
-  <Router history={browserHistory} routes={routes} />,
+  <Router>
+    <App>{routes}</App>
+  </Router>,
   document.getElementById('root')
 );

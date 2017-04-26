@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
     render() {
@@ -7,7 +7,7 @@ class HomePage extends Component {
             <div className="jumbotron">
                 <h1>Home Page</h1>
                 <p>React Redux starter</p>
-                <Link to="about" className="btn btn-default">Learn more</Link>  
+                <Link to="about" className="btn btn-primary btn-lg">Learn more</Link>  
             </div>
         );
     }
