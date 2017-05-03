@@ -65,7 +65,6 @@ function getCourseById(courses, id) {
 }
 
 function mapState(state, ownProps) {
-  debugger;
   const courseNamePath = ownProps.location.pathname; // from path '/course/:id'
   const courseId = courseNamePath.substring(8, courseNamePath.length); // trim '/course/'
 
